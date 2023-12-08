@@ -1,7 +1,7 @@
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Domain.DataAccess;
+namespace Infrastructure.Persistence;
 
 public class PeopleDbContext : DbContext
 {
@@ -11,5 +11,4 @@ public class PeopleDbContext : DbContext
     public DbSet<Address> Addresses { get; set; } = default!;
     public DbSet<Email> Emails { get; set; } = default!;
 }
-
 
